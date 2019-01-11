@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
-    $(".loading").fadeOut(3000);
-    // $(".loading").fadeOut(3000, function(){
-    //     $("body").css({"overflow-y":"hidden","overflow-x":"hidden"});
-    // });
+    // $(".loading").fadeOut(3000);
+    $(".loading").fadeOut(3000, function(){
+        $("body").css("overflow","scroll");
+    });
 
     var mySwiper = new Swiper(".swiper-container", {
         direction: "vertical",
@@ -16,15 +16,5 @@ $(document).ready(function() {
         autoplay: false,
         effect: "slide",
         mousewheelControl: 1
-    });
-
-    $("#home-slider").scroll(function(){
-        console.log("dznfez");
-        // $('body').fadeTo('slow', 0.3, function()
-        // {
-        //     $(this).css('background-image', 'url(' + $img + ')');
-        // }).delay(1000).fadeTo('slow', 1);
-    });
-
+    });   
 });
-

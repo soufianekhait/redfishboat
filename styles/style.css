@@ -12,7 +12,11 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
+a{text-decoration: none; color: white;}
+a:hover{color: yellow; transition: 0.8s all ease;}
 
 body, html{
     width: 100%;
@@ -27,12 +31,6 @@ body, html{
     height: 100vh;
     overflow: hidden;
 }
-
-/* .content > * {
-    height: 200%;
-    position: relative;
-    top: -100%;
-} */
 
 .loading {
     height: 100vh;
@@ -96,14 +94,14 @@ div #image{
     position: relative;
 }
 
-#parallax1{
+/* #parallax1{
     border-collapse: separate;
     border-spacing: 40px;
     margin: 0 -40px;
     min-width: 100%;
-}
+} */
 
-.carte1{
+/* .carte1{
     display: table-cell;
     width: 62.5%;
     background: #fff;
@@ -115,7 +113,7 @@ div #image{
     display: table-cell;
     width: 33%;
     vertical-align: bottom;
-}
+} */
 
 .content-wrapper p{
     color: black;
@@ -135,6 +133,20 @@ div #image{
     margin-right: auto;
 }
 
+#image img{
+    width: 300px;
+    height: auto;
+}
+
+.content #video{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
 @media (min-width: 200px) and (max-width: 800px) {
     .content-wrapper p{margin: 20px 20px 0 20px;}
     #image img {width: 350px; height: auto;}
@@ -144,3 +156,6 @@ div #image{
     .content-wrapper p{margin: 20px 20px 0 20px;}
 }
 
+@media only screen and (max-width: 1500px) {
+    .content #video{height: auto;}
+}
